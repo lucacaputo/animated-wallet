@@ -1,0 +1,65 @@
+<svg width="342.58" height="216" viewBox="0 0 342.58 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg14" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#04331f" />
+      <stop offset="55%" stop-color="#0a5c39" />
+      <stop offset="100%" stop-color="#021a10" />
+    </linearGradient>
+    <linearGradient id="chip14" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e3ad" />
+      <stop offset="100%" stop-color="#c9ab5f" />
+    </linearGradient>
+    <clipPath id="clip14">
+      <rect width="342.58" height="216" rx="20" />
+    </clipPath>
+    <radialGradient id="glowA14" cx="80%" cy="5%" r="65%">
+    <stop offset="0%" stop-color="#7cffb0" stop-opacity="0.16" />
+    <stop offset="100%" stop-color="#7cffb0" stop-opacity="0" />
+  </radialGradient>
+  </defs>
+
+  <g clip-path="url(#clip14)">
+    <rect width="342.58" height="216" fill="url(#bg14)" />
+    <rect width="342.58" height="216" fill="url(#glowA14)" />
+    <path d="M184.0,-0.8 Q207.6,17.2 219.8,35.2 Q208.7,53.2 214.4,71.2 Q243.0,89.2 245.5,107.2 Q255.0,125.2 251.7,143.2 Q285.3,161.2 273.2,179.2 Q268.8,197.2 263.3,215.2" fill="none" stroke="#d6ffe8" stroke-opacity="0.13" stroke-width="1.0" /><path d="M283.8,-9.3 Q257.5,8.7 274.3,26.7 Q280.4,44.7 288.2,62.7 Q275.4,80.7 285.3,98.7 Q259.5,116.7 268.1,134.7 Q287.4,152.7 286.6,170.7 Q293.3,188.7 290.8,206.7" fill="none" stroke="#d6ffe8" stroke-opacity="0.12" stroke-width="1.4" /><path d="M84.1,-7.4 Q91.8,10.6 82.8,28.6 Q106.8,46.6 91.4,64.6 Q99.3,82.6 107.6,100.6 Q138.1,118.6 123.7,136.6 Q156.4,154.6 141.4,172.6 Q141.6,190.6 127.1,208.6" fill="none" stroke="#d6ffe8" stroke-opacity="0.14" stroke-width="0.9" /><path d="M231.9,-7.5 Q266.0,10.5 267.6,28.5 Q319.7,46.5 308.3,64.5 Q358.9,82.5 344.8,100.5 Q336.7,118.5 350.1,136.5 Q379.5,154.5 386.6,172.5 Q412.2,190.5 414.7,208.5" fill="none" stroke="#d6ffe8" stroke-opacity="0.19" stroke-width="1.8" /><path d="M41.2,-3.2 Q38.5,14.8 24.0,32.8 Q26.5,50.8 15.9,68.8 Q54.0,86.8 37.7,104.8 Q43.4,122.8 52.6,140.8 Q56.6,158.8 66.9,176.8 Q89.6,194.8 100.0,212.8" fill="none" stroke="#d6ffe8" stroke-opacity="0.13" stroke-width="1.1" />
+    <rect width="342.58" height="70" fill="#000000" opacity="0.1" />
+    <rect y="156" width="342.58" height="60" fill="#000000" opacity="0.18" />
+  </g>
+  <rect x="0.5" y="0.5" width="341.58" height="215" rx="19.5" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" />
+
+  <g>
+    <circle cx="32" cy="17" r="9" fill="#d6ffe8" opacity="0.9" />
+    <text x="48" y="21" font-size="12.5" letter-spacing="0.5" fill="#ffffff" font-weight="700">JADE</text>
+  </g>
+
+  <g>
+    <rect x="24" y="38" width="48" height="36" rx="7" fill="url(#chip14)" />
+    <rect x="24" y="38" width="48" height="36" rx="7" fill="none" stroke="#000" stroke-opacity="0.15" stroke-width="1" />
+    <rect x="31" y="48" width="34" height="16" rx="2" fill="none" stroke="#00000055" stroke-width="1" />
+    <line x1="48" y1="38" x2="48" y2="74" stroke="#00000033" stroke-width="1" />
+    <line x1="24" y1="56" x2="72" y2="56" stroke="#00000033" stroke-width="1" />
+  </g>
+
+  <g transform="translate(96 56)" stroke="#ffffff" stroke-opacity="0.55" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M0,14 A14,14 0 0 1 0,-14" />
+    <path d="M0,9 A9,9 0 0 1 0,-9" />
+    <path d="M0,4 A4,4 0 0 1 0,-4" />
+  </g>
+
+  <g transform="translate(288 168)">
+    <circle cx="-8" cy="0" r="17" fill="#d6ffe8" opacity="0.75" />
+    <circle cx="8" cy="0" r="17" fill="#7cffb0" opacity="0.75" />
+    <circle cx="-8" cy="0" r="17" fill="#d6ffe8" opacity="0.35" style="mix-blend-mode:screen" />
+  </g>
+
+  <text x="318.58" y="30" text-anchor="end" font-size="12" letter-spacing="2.5" fill="#ffffff" fill-opacity="0.8" font-weight="700">DEBIT</text>
+
+  <text x="25" y="133" font-size="21" letter-spacing="3" fill="#000000" fill-opacity="0.35">&#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; 9903</text>
+  <text x="24" y="132" font-size="21" letter-spacing="3" fill="#ffffff">&#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; 9903</text>
+
+  <text x="24" y="168" font-size="8.5" letter-spacing="1.5" fill="#ffffff" fill-opacity="0.55">CARD HOLDER</text>
+  <text x="24" y="185" font-size="13" letter-spacing="1" fill="#ffffff" font-weight="500">A CARDHOLDER</text>
+
+  <text x="318.58" y="168" text-anchor="end" font-size="8.5" letter-spacing="1.5" fill="#ffffff" fill-opacity="0.55">VALID THRU</text>
+  <text x="318.58" y="185" text-anchor="end" font-size="13" letter-spacing="1" fill="#ffffff" font-weight="500">09/27</text>
+</svg>

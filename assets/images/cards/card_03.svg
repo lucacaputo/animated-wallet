@@ -1,0 +1,65 @@
+<svg width="342.58" height="216" viewBox="0 0 342.58 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg03" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003b46" />
+      <stop offset="55%" stop-color="#07575b" />
+      <stop offset="100%" stop-color="#001519" />
+    </linearGradient>
+    <linearGradient id="chip03" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#eef2f5" />
+      <stop offset="100%" stop-color="#a9b4bd" />
+    </linearGradient>
+    <clipPath id="clip03">
+      <rect width="342.58" height="216" rx="20" />
+    </clipPath>
+    <radialGradient id="glowA03" cx="80%" cy="5%" r="65%">
+    <stop offset="0%" stop-color="#66ffe0" stop-opacity="0.22" />
+    <stop offset="100%" stop-color="#66ffe0" stop-opacity="0" />
+  </radialGradient>
+  </defs>
+
+  <g clip-path="url(#clip03)">
+    <rect width="342.58" height="216" fill="url(#bg03)" />
+    <rect width="342.58" height="216" fill="url(#glowA03)" />
+    <path d="M-10,129.6 Q10.0,117.6 30.0,129.6 Q50.0,117.6 70.0,129.6 Q90.0,117.6 110.0,129.6 Q130.0,117.6 150.0,129.6 Q170.0,117.6 190.0,129.6 Q210.0,117.6 230.0,129.6 Q250.0,117.6 270.0,129.6 Q290.0,117.6 310.0,129.6 Q330.0,117.6 350.0,129.6 Q370.0,117.6 390.0,129.6 L362.58,226 L-10,226 Z" fill="#ffffff" opacity="0.05" /><path d="M-10,155.5 Q10.0,167.5 30.0,155.5 Q50.0,167.5 70.0,155.5 Q90.0,167.5 110.0,155.5 Q130.0,167.5 150.0,155.5 Q170.0,167.5 190.0,155.5 Q210.0,167.5 230.0,155.5 Q250.0,167.5 270.0,155.5 Q290.0,167.5 310.0,155.5 Q330.0,167.5 350.0,155.5 Q370.0,167.5 390.0,155.5 L362.58,226 L-10,226 Z" fill="#ffffff" opacity="0.08" /><path d="M-10,183.6 Q10.0,171.6 30.0,183.6 Q50.0,171.6 70.0,183.6 Q90.0,171.6 110.0,183.6 Q130.0,171.6 150.0,183.6 Q170.0,171.6 190.0,183.6 Q210.0,171.6 230.0,183.6 Q250.0,171.6 270.0,183.6 Q290.0,171.6 310.0,183.6 Q330.0,171.6 350.0,183.6 Q370.0,171.6 390.0,183.6 L362.58,226 L-10,226 Z" fill="#ffffff" opacity="0.11" /><path d="M-10,205.2 Q10.0,217.2 30.0,205.2 Q50.0,217.2 70.0,205.2 Q90.0,217.2 110.0,205.2 Q130.0,217.2 150.0,205.2 Q170.0,217.2 190.0,205.2 Q210.0,217.2 230.0,205.2 Q250.0,217.2 270.0,205.2 Q290.0,217.2 310.0,205.2 Q330.0,217.2 350.0,205.2 Q370.0,217.2 390.0,205.2 L362.58,226 L-10,226 Z" fill="#ffffff" opacity="0.14" /><circle cx="178.3" cy="137.1" r="1.7" fill="#ffffff" opacity="0.19" /><circle cx="97.7" cy="173.9" r="1.6" fill="#ffffff" opacity="0.25" /><circle cx="162.1" cy="152.6" r="0.6" fill="#ffffff" opacity="0.17" /><circle cx="62.1" cy="177.3" r="1.9" fill="#ffffff" opacity="0.20" /><circle cx="300.1" cy="134.4" r="1.8" fill="#ffffff" opacity="0.24" /><circle cx="320.2" cy="166.6" r="0.8" fill="#ffffff" opacity="0.17" /><circle cx="38.0" cy="162.0" r="1.8" fill="#ffffff" opacity="0.16" /><circle cx="273.0" cy="134.2" r="0.6" fill="#ffffff" opacity="0.25" /><circle cx="37.0" cy="121.2" r="1.6" fill="#ffffff" opacity="0.22" /><circle cx="31.3" cy="139.0" r="1.8" fill="#ffffff" opacity="0.25" />
+    <rect width="342.58" height="70" fill="#000000" opacity="0.1" />
+    <rect y="156" width="342.58" height="60" fill="#000000" opacity="0.18" />
+  </g>
+  <rect x="0.5" y="0.5" width="341.58" height="215" rx="19.5" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" />
+
+  <g>
+    <circle cx="32" cy="17" r="9" fill="#8ef0ff" opacity="0.9" />
+    <text x="48" y="21" font-size="12.5" letter-spacing="0.5" fill="#ffffff" font-weight="700">TIDAL</text>
+  </g>
+
+  <g>
+    <rect x="24" y="38" width="48" height="36" rx="7" fill="url(#chip03)" />
+    <rect x="24" y="38" width="48" height="36" rx="7" fill="none" stroke="#000" stroke-opacity="0.15" stroke-width="1" />
+    <rect x="31" y="48" width="34" height="16" rx="2" fill="none" stroke="#00000055" stroke-width="1" />
+    <line x1="48" y1="38" x2="48" y2="74" stroke="#00000033" stroke-width="1" />
+    <line x1="24" y1="56" x2="72" y2="56" stroke="#00000033" stroke-width="1" />
+  </g>
+
+  <g transform="translate(96 56)" stroke="#ffffff" stroke-opacity="0.55" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M0,14 A14,14 0 0 1 0,-14" />
+    <path d="M0,9 A9,9 0 0 1 0,-9" />
+    <path d="M0,4 A4,4 0 0 1 0,-4" />
+  </g>
+
+  <g transform="translate(288 168)">
+    <circle cx="-8" cy="0" r="17" fill="#8ef0ff" opacity="0.75" />
+    <circle cx="8" cy="0" r="17" fill="#ffffff" opacity="0.75" />
+    <circle cx="-8" cy="0" r="17" fill="#8ef0ff" opacity="0.35" style="mix-blend-mode:screen" />
+  </g>
+
+  <text x="318.58" y="30" text-anchor="end" font-size="12" letter-spacing="2.5" fill="#ffffff" fill-opacity="0.8" font-weight="700">CREDIT</text>
+
+  <text x="25" y="133" font-size="21" letter-spacing="3" fill="#000000" fill-opacity="0.35">&#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; 9012</text>
+  <text x="24" y="132" font-size="21" letter-spacing="3" fill="#ffffff">&#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; 9012</text>
+
+  <text x="24" y="168" font-size="8.5" letter-spacing="1.5" fill="#ffffff" fill-opacity="0.55">CARD HOLDER</text>
+  <text x="24" y="185" font-size="13" letter-spacing="1" fill="#ffffff" font-weight="500">A CARDHOLDER</text>
+
+  <text x="318.58" y="168" text-anchor="end" font-size="8.5" letter-spacing="1.5" fill="#ffffff" fill-opacity="0.55">VALID THRU</text>
+  <text x="318.58" y="185" text-anchor="end" font-size="13" letter-spacing="1" fill="#ffffff" font-weight="500">11/27</text>
+</svg>
