@@ -1,6 +1,7 @@
 import { StyleSheet, View } from "react-native";
 import Animated, {
   useAnimatedStyle,
+  useDerivedValue,
   useSharedValue,
   withDecay,
   withTiming,
@@ -13,6 +14,9 @@ import { useEffect, useState } from "react";
 const CardList = () => {
   const [cards, setCards] = useState(CARD_IMAGES);
   const trY = useSharedValue(0);
+  const height = useSharedValue(cards.length * V_OFFSET);
+  const selectedCard = useSharedValue<number | null>(null);
+  const panEnabled = useDerivedValue(() => selectedCard.value === null);
   const panGesture = usePanGesture({
     onUpdate: ({ changeY }) => {
       trY.value += changeY;
@@ -24,8 +28,8 @@ const CardList = () => {
         clamp: [-V_OFFSET * cards.length, 0],
       });
     },
+    enabled: panEnabled,
   });
-  const height = useSharedValue(cards.length * V_OFFSET);
 
   useEffect(() => {
     height.value = cards.length * V_OFFSET;
@@ -46,6 +50,8 @@ const CardList = () => {
         <Animated.View style={[styles.scrollable, rScrollableStyle]}>
           {cards.map((img, idx) => (
             <CreditCard
+              index={idx}
+              selectedCardIndex={selectedCard}
               src={img}
               key={`card-image-${idx}`}
               style={{ transform: [{ translateY: -idx * (250 - V_OFFSET) }] }}
