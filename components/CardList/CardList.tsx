@@ -50,11 +50,11 @@ const CardList = () => {
         <Animated.View style={[styles.scrollable, rScrollableStyle]}>
           {cards.map((img, idx) => (
             <CreditCard
+              listTranslationState={trY}
               index={idx}
               selectedCardIndex={selectedCard}
               src={img}
               key={`card-image-${idx}`}
-              style={{ transform: [{ translateY: -idx * (250 - V_OFFSET) }] }}
             />
           ))}
         </Animated.View>
