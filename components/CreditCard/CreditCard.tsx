@@ -1,6 +1,7 @@
 import { type StyleProp, StyleSheet, View, type ViewStyle } from "react-native";
 import Image from "@d11/react-native-fast-image";
 import Animated, {
+  cancelAnimation,
   measure,
   SharedValue,
   useAnimatedReaction,
@@ -49,6 +50,7 @@ const CreditCard = ({
         translation.value = -index * (250 - V_OFFSET);
         return;
       }
+      cancelAnimation(listTranslationState);
       if (curr === index) {
         // a card has been selected, here we handle the selected card
         const currentPosition = measure(wrapperRef) ?? { pageY: 0 };
