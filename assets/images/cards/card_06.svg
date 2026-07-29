@@ -1,0 +1,65 @@
+<svg width="342.58" height="216" viewBox="0 0 342.58 216" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg06" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d0d" />
+      <stop offset="55%" stop-color="#1e1a12" />
+      <stop offset="100%" stop-color="#000000" />
+    </linearGradient>
+    <linearGradient id="chip06" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f3e3ad" />
+      <stop offset="100%" stop-color="#c9ab5f" />
+    </linearGradient>
+    <clipPath id="clip06">
+      <rect width="342.58" height="216" rx="20" />
+    </clipPath>
+    <radialGradient id="glowA06" cx="90%" cy="95%" r="65%">
+    <stop offset="0%" stop-color="#e8c574" stop-opacity="0.18" />
+    <stop offset="100%" stop-color="#e8c574" stop-opacity="0" />
+  </radialGradient>
+  </defs>
+
+  <g clip-path="url(#clip06)">
+    <rect width="342.58" height="216" fill="url(#bg06)" />
+    <rect width="342.58" height="216" fill="url(#glowA06)" />
+    <line x1="352.58" y1="226" x2="92.6" y2="226.0" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><line x1="352.58" y1="226" x2="95.1" y2="189.8" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><line x1="352.58" y1="226" x2="102.7" y2="154.3" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><line x1="352.58" y1="226" x2="115.1" y2="120.2" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><line x1="352.58" y1="226" x2="132.1" y2="88.2" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><line x1="352.58" y1="226" x2="153.4" y2="58.9" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><line x1="352.58" y1="226" x2="178.6" y2="32.8" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><line x1="352.58" y1="226" x2="207.2" y2="10.5" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><line x1="352.58" y1="226" x2="238.6" y2="-7.7" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><line x1="352.58" y1="226" x2="272.2" y2="-21.3" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><line x1="352.58" y1="226" x2="307.4" y2="-30.1" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><line x1="352.58" y1="226" x2="343.5" y2="-33.8" stroke="#e8c574" stroke-opacity="0.14" stroke-width="1.5" /><circle cx="352.58" cy="226" r="60" fill="none" stroke="#e8c574" stroke-opacity="0.16" stroke-width="1" /><circle cx="352.58" cy="226" r="100" fill="none" stroke="#e8c574" stroke-opacity="0.16" stroke-width="1" /><circle cx="352.58" cy="226" r="140" fill="none" stroke="#e8c574" stroke-opacity="0.16" stroke-width="1" />
+    <rect width="342.58" height="70" fill="#000000" opacity="0.1" />
+    <rect y="156" width="342.58" height="60" fill="#000000" opacity="0.18" />
+  </g>
+  <rect x="0.5" y="0.5" width="341.58" height="215" rx="19.5" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1" />
+
+  <g>
+    <circle cx="32" cy="17" r="9" fill="#e8c574" opacity="0.9" />
+    <text x="48" y="21" font-size="12.5" letter-spacing="0.5" fill="#ffffff" font-weight="700">REGAL</text>
+  </g>
+
+  <g>
+    <rect x="24" y="38" width="48" height="36" rx="7" fill="url(#chip06)" />
+    <rect x="24" y="38" width="48" height="36" rx="7" fill="none" stroke="#000" stroke-opacity="0.15" stroke-width="1" />
+    <rect x="31" y="48" width="34" height="16" rx="2" fill="none" stroke="#00000055" stroke-width="1" />
+    <line x1="48" y1="38" x2="48" y2="74" stroke="#00000033" stroke-width="1" />
+    <line x1="24" y1="56" x2="72" y2="56" stroke="#00000033" stroke-width="1" />
+  </g>
+
+  <g transform="translate(96 56)" stroke="#ffffff" stroke-opacity="0.55" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M0,14 A14,14 0 0 1 0,-14" />
+    <path d="M0,9 A9,9 0 0 1 0,-9" />
+    <path d="M0,4 A4,4 0 0 1 0,-4" />
+  </g>
+
+  <g transform="translate(288 168)">
+    <circle cx="-8" cy="0" r="17" fill="#e8c574" opacity="0.75" />
+    <circle cx="8" cy="0" r="17" fill="#fff3d6" opacity="0.75" />
+    <circle cx="-8" cy="0" r="17" fill="#e8c574" opacity="0.35" style="mix-blend-mode:screen" />
+  </g>
+
+  <text x="318.58" y="30" text-anchor="end" font-size="12" letter-spacing="2.5" fill="#ffffff" fill-opacity="0.8" font-weight="700">CREDIT</text>
+
+  <text x="25" y="133" font-size="21" letter-spacing="3" fill="#000000" fill-opacity="0.35">&#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; 0007</text>
+  <text x="24" y="132" font-size="21" letter-spacing="3" fill="#ffffff">&#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; &#8226;&#8226;&#8226;&#8226; 0007</text>
+
+  <text x="24" y="168" font-size="8.5" letter-spacing="1.5" fill="#ffffff" fill-opacity="0.55">CARD HOLDER</text>
+  <text x="24" y="185" font-size="13" letter-spacing="1" fill="#ffffff" font-weight="500">A CARDHOLDER</text>
+
+  <text x="318.58" y="168" text-anchor="end" font-size="8.5" letter-spacing="1.5" fill="#ffffff" fill-opacity="0.55">VALID THRU</text>
+  <text x="318.58" y="185" text-anchor="end" font-size="13" letter-spacing="1" fill="#ffffff" font-weight="500">01/31</text>
+</svg>
