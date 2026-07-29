@@ -1,17 +1,22 @@
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
-import { StyleSheet, Text, View } from "react-native";
-import { CARD_IMAGES } from "./constants";
-import CreditCard from "./components/CreditCard";
+import { StyleSheet, View } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import CardList from "./components/CardList/CardList";
+import { PortalHost, PortalProvider } from "react-native-teleport";
 
 export default function App() {
   return (
     <GestureHandlerRootView>
       <SafeAreaProvider>
-        <SafeAreaView style={styles.safeArea} edges={["top", "bottom"]}>
-          <CardList />
-        </SafeAreaView>
+        <PortalProvider>
+          <PortalHost
+            style={[StyleSheet.absoluteFill, { zIndex: 10 }]}
+            name="overlay"
+          />
+          <SafeAreaView style={styles.safeArea} edges={["top", "bottom"]}>
+            <CardList />
+          </SafeAreaView>
+        </PortalProvider>
       </SafeAreaProvider>
     </GestureHandlerRootView>
   );

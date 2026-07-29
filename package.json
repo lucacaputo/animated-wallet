@@ -6,6 +6,7 @@
     "@d11/react-native-fast-image": "^8.13.0",
     "expo": "~57.0.8",
     "expo-asset": "~57.0.7",
+    "expo-blur": "~57.0.2",
     "expo-dev-client": "~57.0.9",
     "expo-file-system": "~57.0.1",
     "expo-status-bar": "~57.0.1",
@@ -15,6 +16,7 @@
     "react-native-gesture-handler": "^3.1.0",
     "react-native-reanimated": "4.5.0",
     "react-native-safe-area-context": "~5.7.0",
+    "react-native-svg": "15.15.4",
     "react-native-teleport": "^1.1.12",
     "react-native-worklets": "0.10.0"
   },
