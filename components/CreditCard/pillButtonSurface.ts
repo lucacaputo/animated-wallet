@@ -9,7 +9,6 @@ export const pillButtonSurface = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 8,
     shadowOffset: { width: 0, height: 2 },
-    elevation: 4,
   },
   pressed: {
     backgroundColor: "rgba(30,30,30,0.7)",
