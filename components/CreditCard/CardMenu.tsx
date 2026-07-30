@@ -6,6 +6,7 @@ import { BlurView } from "expo-blur";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import MenuButton from "./MenuButton";
 import CloseButton from "./CloseButton";
+import { type RefObject } from "react";
 
 const AnimatedBlurView = Animated.createAnimatedComponent(BlurView);
 
@@ -19,6 +20,7 @@ type CardMenuProps = {
   isOverlayVisible: boolean;
   isMenuOpen: boolean;
   actions: CardMenuAction[];
+  blurTargetRef: RefObject<View | null>;
   onRequestClose: () => void;
   onExited: () => void;
 };
@@ -27,6 +29,7 @@ const CardMenu = ({
   isOverlayVisible,
   isMenuOpen,
   actions,
+  blurTargetRef,
   onRequestClose,
   onExited,
 }: CardMenuProps) => {
@@ -49,8 +52,12 @@ const CardMenu = ({
               }
             })}
           style={styles.overlayWrapper}
+          blurMethod="dimezisBlurViewSdk31Plus"
+          intensity={50}
+          blurTarget={blurTargetRef}
         />
       )}
+
       <View style={[styles.teleportedCardWrapper, { paddingTop: topInset }]}>
         <PortalHost name="card" style={styles.teleportedCard} />
         <View style={styles.menuWrapper}>
@@ -79,9 +86,7 @@ const styles = StyleSheet.create({
     zIndex: 11,
     width: "100%",
     height: 250,
-    borderRadius: 16,
     paddingHorizontal: 16,
-    overflow: "hidden",
   },
   teleportedCardWrapper: {
     position: "absolute",
