@@ -26,6 +26,12 @@
     "plugins": [
       "expo-file-system",
       [
+        "expo-asset",
+        {
+          "assets": ["assets/images/cards"]
+        }
+      ],
+      [
         "expo-build-properties",
         {
           "ios": {
