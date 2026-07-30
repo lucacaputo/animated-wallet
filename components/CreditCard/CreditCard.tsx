@@ -8,6 +8,7 @@ import Animated, {
   useAnimatedReaction,
   useAnimatedRef,
   useAnimatedStyle,
+  useDerivedValue,
   useSharedValue,
   withSpring,
   withTiming,
@@ -24,6 +25,7 @@ import { useState } from "react";
 import { scheduleOnRN } from "react-native-worklets";
 import { Portal } from "react-native-teleport";
 import CardMenu, { type CardMenuAction } from "./CardMenu";
+import * as Haptics from "expo-haptics";
 
 type CreditCardProps = {
   src: string;
@@ -58,7 +60,9 @@ const CreditCard = ({
       selectedCardIndex.value = index;
     },
   });
+  const isSelected = useDerivedValue(() => selectedCardIndex.value === index);
   const lonPressGesture = useLongPressGesture({
+    enabled: isSelected,
     block: tapGesture,
     onBegin: () => {
       scaleValue.value = withTiming(0.9, {
@@ -67,7 +71,8 @@ const CreditCard = ({
       });
     },
     onActivate: () => {
-      scaleValue.value = withSpring(1);
+      scaleValue.value = withSpring(1, { stiffness: 1000, damping: 25 });
+      scheduleOnRN(Haptics.impactAsync, Haptics.ImpactFeedbackStyle.Rigid);
       scheduleOnRN(openMenu);
     },
     onFinalize: () => {
@@ -142,7 +147,7 @@ const CreditCard = ({
                 uri: src,
               }}
               resizeMode={Image.resizeMode.cover}
-              style={rCardImageStyle}
+              style={[styles.cardImage, rCardImageStyle]}
             />
           </Portal>
         </Animated.View>
@@ -160,10 +165,12 @@ const CreditCard = ({
 
 const styles = StyleSheet.create({
   cardWrapper: {
-    borderRadius: 16,
     width: "100%",
     height: 250,
     overflow: "hidden",
+  },
+  cardImage: {
+    borderRadius: 16,
   },
 });
 
