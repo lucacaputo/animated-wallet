@@ -9,10 +9,12 @@ import Animated, {
 import { CARD_IMAGES, V_OFFSET } from "../../constants";
 import CreditCard from "../CreditCard";
 import { GestureDetector, usePanGesture } from "react-native-gesture-handler";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { BlurTargetView } from "expo-blur";
 
 const CardList = () => {
   const [cards, setCards] = useState(CARD_IMAGES);
+  const blurTargetRef = useRef<View>(null);
   const trY = useSharedValue(0);
   const height = useSharedValue(cards.length * V_OFFSET);
   const selectedCard = useSharedValue<number | null>(null);
@@ -46,19 +48,20 @@ const CardList = () => {
 
   return (
     <GestureDetector gesture={panGesture}>
-      <View style={styles.wrapper}>
+      <BlurTargetView ref={blurTargetRef} style={styles.wrapper}>
         <Animated.View style={[styles.scrollable, rScrollableStyle]}>
           {cards.map((img, idx) => (
             <CreditCard
               listTranslationState={trY}
               index={idx}
               selectedCardIndex={selectedCard}
+              blurTargetRef={blurTargetRef}
               src={img}
               key={`card-image-${idx}`}
             />
           ))}
         </Animated.View>
-      </View>
+      </BlurTargetView>
     </GestureDetector>
   );
 };

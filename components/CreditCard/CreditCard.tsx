@@ -21,7 +21,7 @@ import {
 } from "react-native-gesture-handler";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { V_OFFSET } from "../../constants";
-import { useState } from "react";
+import { type RefObject, useState } from "react";
 import { scheduleOnRN } from "react-native-worklets";
 import { Portal } from "react-native-teleport";
 import CardMenu, { type CardMenuAction } from "./CardMenu";
@@ -33,6 +33,7 @@ type CreditCardProps = {
   style?: StyleProp<ViewStyle>;
   selectedCardIndex: SharedValue<number | null>;
   listTranslationState: SharedValue<number>;
+  blurTargetRef: RefObject<View | null>;
 };
 
 const AnimatedImage = Animated.createAnimatedComponent(Image);
@@ -43,6 +44,7 @@ const CreditCard = ({
   index,
   selectedCardIndex,
   listTranslationState,
+  blurTargetRef,
 }: CreditCardProps) => {
   const [isMenuOpen, setMenuOpen] = useState(false);
   const [isOverlayVisible, setOverlayVisible] = useState(false);
@@ -156,6 +158,7 @@ const CreditCard = ({
         isOverlayVisible={isOverlayVisible}
         isMenuOpen={isMenuOpen}
         actions={menuActions}
+        blurTargetRef={blurTargetRef}
         onRequestClose={() => setMenuOpen(false)}
         onExited={() => setOverlayVisible(false)}
       />
@@ -167,7 +170,6 @@ const styles = StyleSheet.create({
   cardWrapper: {
     width: "100%",
     height: 250,
-    overflow: "hidden",
   },
   cardImage: {
     borderRadius: 16,
