@@ -1,5 +1,6 @@
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, useWindowDimensions, View } from "react-native";
 import Animated, {
+  clamp,
   useAnimatedStyle,
   useDerivedValue,
   useSharedValue,
@@ -11,6 +12,7 @@ import CreditCard from "../CreditCard";
 import { GestureDetector, usePanGesture } from "react-native-gesture-handler";
 import { useEffect, useRef, useState } from "react";
 import { BlurTargetView } from "expo-blur";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 const CardList = () => {
   const [cards, setCards] = useState(CARD_IMAGES);
@@ -19,6 +21,14 @@ const CardList = () => {
   const height = useSharedValue(cards.length * V_OFFSET);
   const selectedCard = useSharedValue<number | null>(null);
   const panEnabled = useDerivedValue(() => selectedCard.value === null);
+  const { height: screenHeight } = useWindowDimensions();
+  const { top: topInset, bottom: bottomInset } = useSafeAreaInsets();
+  const lowerBound =
+    -V_OFFSET * cards.length +
+    screenHeight -
+    (250 - V_OFFSET) -
+    (bottomInset + topInset);
+  const upperBound = 0;
   const panGesture = usePanGesture({
     onUpdate: ({ changeY }) => {
       trY.value += changeY;
@@ -27,14 +37,14 @@ const CardList = () => {
       trY.value = withDecay({
         velocity: velocityY,
         rubberBandEffect: true,
-        clamp: [-V_OFFSET * cards.length, 0],
+        clamp: [lowerBound, upperBound],
       });
     },
     enabled: panEnabled,
   });
 
   useEffect(() => {
-    height.value = cards.length * V_OFFSET;
+    height.value = cards.length * V_OFFSET + (250 - V_OFFSET);
   }, [cards.length]);
 
   const rScrollableStyle = useAnimatedStyle(() => ({
