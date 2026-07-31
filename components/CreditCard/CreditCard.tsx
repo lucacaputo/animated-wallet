@@ -77,7 +77,10 @@ const CreditCard = ({
       scheduleOnRN(Haptics.impactAsync, Haptics.ImpactFeedbackStyle.Rigid);
       scheduleOnRN(openMenu);
     },
-    onFinalize: () => {
+    onFinalize: ({ canceled }) => {
+      if (!canceled) {
+        return;
+      }
       cancelAnimation(scaleValue);
       scaleValue.value = withSpring(1);
     },
